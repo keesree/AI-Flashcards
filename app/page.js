@@ -34,30 +34,47 @@ export default function Home() {
 
       }}
       >
-        <Typography variant="h2">Welcome to Flashcard SaaS</Typography>
-        <Typography variant="h5"> {' '} The easiest way to make flashcards from your text</Typography>
+        <Typography variant="h2" gutterBottom>Welcome to Flashcard SaaS</Typography>
+        <Typography variant="h5" gutterBottom> {' '} The easiest way to make flashcards from your text</Typography>
         <Button variant='contained' color="primary" sx={{mt:2}}>Get Started</Button>
       </Box>
       <Box sx = {{my:6}}>
         <Typography variant="h4" >Features</Typography>
         <Grid contained spacing ={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6">Easy Text Input</Typography>
+          <Box sx = {{p:3, border: '1px solid', borderColor: 'grey.300', borderRadius: 2}}>
+
+            <Typography variant="h5" gutterBottom>Basic</Typography>
+            <Typography variant="h6" gutterBottom> $5 / month</Typography>
             <Typography>
               {' '}
+              Access to basic flashcard features and limited storage.
               Simply input your text and let our software do the rest. Creating flashcards has never been easier. 
             </Typography>
+            <Button variant = "contained" color = "primary" sx = {{mt: 2}}> Choose Basic</Button>
+            </Box>
           </Grid>
           
-          <Grid item xs={12} md={4}>
-            <Typography variant="h6">Smart Flashcards</Typography>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h6" gutterBottom>Smart Flashcards</Typography>
             <Typography>
               {' '}
               Our AI Intelligently breaks down your text into concise flashcards, perfect for studying.
             </Typography>
           </Grid>
+          <Box sx = {{p:3, border: '1px solid', borderColor: 'grey.300', borderRadius: 2}}>
 
-          <Grid item xs={12} md={4}>
+            <Typography variant="h5" gutterBottom>Pro</Typography>
+            <Typography variant="h6" gutterBottom> $10 / month</Typography>
+            <Typography>
+              {' '}
+              Unlimited flashcards and storage, with priority support. 
+              Simply input your text and let our software do the rest. Creating flashcards has never been easier. 
+            </Typography>
+            <Button variant = "contained" color = "primary" sx = {{mt: 2}}> Choose Pro</Button>
+            </Box>
+
+          <Grid item xs={12} md={4} gutterBottom>
             <Typography variant="h6">Accessible Anywhere</Typography>
             <Typography>
               {' '}
@@ -70,13 +87,15 @@ export default function Home() {
       </Box>
       <Box sx={{my:6,textAlign: 'center'}}>
         <Typography variant="h4">Pricing</Typography>
-        <Grid contained spacing ={4}>
+        <Grid container spacing ={4}>
           <Grid item xs={12} md={4}>
+            <Box sx = {{p:3, border: '1px solid', borderColor: 'grey.300', borderRadius: 2}}>
             <Typography variant="h6">Easy Text Input</Typography>
             <Typography>
               {' '}
               Simply input your text and let our software do the rest. Creating flashcards has never been easier. 
             </Typography>
+            </Box>
           </Grid>
           
           <Grid item xs={12} md={4}>
